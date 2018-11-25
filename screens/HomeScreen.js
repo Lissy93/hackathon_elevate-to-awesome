@@ -10,7 +10,8 @@ import {
 
 import PureChart from 'react-native-pure-chart';
 
-let sampleData = [
+// This is static data used to render the chart
+let sampleChartData = [
   {x: '2018-11-18', y: 12}, 
   {x: '2018-11-19', y: 14}, 
   {x: '2018-11-20', y: 18},
@@ -22,7 +23,7 @@ let sampleData = [
 
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
-    header: null,
+    header: null, 
   };
 
   render() {
@@ -42,7 +43,7 @@ export default class HomeScreen extends React.Component {
 
             <View style={styles.chartContainer}>
               <Text style={styles.companyTreeCountText}>Company tree count (last 7 days)</Text>
-              <PureChart data={sampleData} type='line' />
+              <PureChart data={sampleChartData} type='line' />
             </View>
 
           </ScrollView>

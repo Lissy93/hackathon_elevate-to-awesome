@@ -10,6 +10,15 @@ import Leaderboard from 'react-native-leaderboard';
  };
 
 export default class HighScoresScreen extends React.Component {
+  
+  static navigationOptions = {
+    title: 'High Scores',
+    header: null, 
+  };
+
+  constructor(props) {
+    super(props);
+  }
 
   state = {
     data: [
@@ -30,20 +39,15 @@ export default class HighScoresScreen extends React.Component {
     ]
   };
 
+  /**
+   * Placeholder functionality for when the user taps on a lift high score
+   */
   _alert = (title, body) => {
     Alert.alert(title, body,
         [{ text: 'OK', onPress: () => { } },],
         { cancelable: false }
     )
 }
-
-  static navigationOptions = {
-    title: 'High Scores',
-  };
-
-  constructor(props) {
-    super(props);
-  }
 
   render() {
 

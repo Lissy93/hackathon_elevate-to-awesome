@@ -18,8 +18,10 @@
     "react": "16.5.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-31.0.0.tar.gz",
     "react-native-chart-kit": "^1.2.0",
+    "react-native-deck-swiper": "^1.5.25",
     "react-native-leaderboard": "^1.0.5",
     "react-native-pure-chart": "0.0.24",
+    "react-native-simple-toast": "0.0.8",
     "react-native-ui-kitten": "^3.1.2",
     "react-navigation": "^2.18.2"
   },
